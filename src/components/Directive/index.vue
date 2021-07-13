@@ -3,6 +3,7 @@
     <button v-throttle ="timer" @click="testClick">
       自定义指令，阻止用户多次点击问题
     </button>
+    <p>{{ msg }}</p>
   </div>
 </template>
 <script>
@@ -14,12 +15,14 @@ export default {
   },
   data() {
     return {
-      timer: 1500
+      timer: 1500,
+      msg: 0 
     };
   },
   methods: {
     testClick() {
       console.log('自定义指令，阻止用户多次点击问题');
+      this.msg ++ ;
     }
   }
 };
