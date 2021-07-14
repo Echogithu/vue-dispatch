@@ -4,6 +4,7 @@ import IndexPage from "@/pages/index";
 import CounterPage from "@/pages/Counter";
 import TodoListPage from "@/pages/TodoList";
 import DirectivePage from "@/pages/Directive";
+import FilterPage from "@/pages/Filter";
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: "/directive",
       name: "DirectivePage",
       component: DirectivePage
+    },
+    {
+      path: "/filter",
+      name: "FilterPage",
+      component: FilterPage
     }
   ]
 });

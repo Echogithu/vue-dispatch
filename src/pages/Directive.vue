@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import Directive from '../components/Directive'
+import Directive from "../components/Directive";
 export default {
-  name: 'DirectivePage',
-  components:{
+  name: "DirectivePage",
+  components: {
     Directive
   }
-}
+};
 </script>
